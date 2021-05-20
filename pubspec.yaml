@@ -24,6 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   percent_indicator: "^2.1.7+2"
+  table_calendar: ^3.0.0
+  flutter_datetime_picker: ^1.5.1
+  intl: ^0.17.0
 
 
   # The following adds the Cupertino Icons font to your application.
