@@ -74,7 +74,9 @@ class NavBar extends StatelessWidget {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/myProfile');
+                },
               ),
               TextButton(
                 child: Align(
