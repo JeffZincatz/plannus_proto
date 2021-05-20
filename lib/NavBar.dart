@@ -55,14 +55,16 @@ class NavBar extends StatelessWidget {
               TextButton(
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text("Calendar",
+                  child: Text("Home",
                     style: TextStyle(
                       fontSize: 25,
                       color: Colors.black,
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
               TextButton(
                 child: Align(
