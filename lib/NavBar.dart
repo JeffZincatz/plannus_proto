@@ -18,28 +18,30 @@ class NavBar extends StatelessWidget {
           title: Row(
             children: [
               Icon(
-                  Icons.person_pin,
+                Icons.person_pin,
                 size: screenHeight * 0.1,
               ),
-              SizedBox(
-                width: screenWidth * 0.45,
-                child: ListView(
-                  shrinkWrap: true,
-                  children: [
-                    Text(
-                        "Xu Jiheng",
-                      style: TextStyle(
-                        fontSize: screenHeight * 0.04,
+              Flexible(
+                child: SizedBox(
+                  width: screenWidth * 0.45,
+                  child: ListView(
+                    shrinkWrap: true,
+                    children: [
+                      Text(
+                          "Xu Jiheng",
+                        style: TextStyle(
+                          fontSize: screenHeight * 0.04,
+                        ),
                       ),
-                    ),
-                    Text(
-                        "jeffzincatz@gmail.com",
-                      style: TextStyle(
-                        fontSize: screenHeight * 0.02,
-                        decoration: TextDecoration.underline,
+                      Text(
+                          "jeffzincatz@gmail.com",
+                        style: TextStyle(
+                          fontSize: screenHeight * 0.02,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -96,7 +98,9 @@ class NavBar extends StatelessWidget {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.popUntil(context, ModalRoute.withName('/'));
+                },
               ),
             ],
           ),

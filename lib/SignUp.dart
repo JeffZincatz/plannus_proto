@@ -16,7 +16,7 @@ class SignUp extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 Text(
-                  "Get start with us today and end your procrastination!",
+                  "Get started with us today and end your procrastination!",
                   style: TextStyle(
                     fontSize: 36,
                   ),
