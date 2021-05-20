@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_radar_chart/flutter_radar_chart.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -34,7 +33,11 @@ class MyProfile extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Bernard's Profile"),
-        toolbarHeight: 40,
+        leading: BackButton(
+          onPressed: () {
+            Navigator.popUntil(context, ModalRoute.withName('/home'));
+          },
+        ),
       ),
       body: Column(
         children: <Widget>[
