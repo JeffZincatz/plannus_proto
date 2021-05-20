@@ -7,6 +7,7 @@ class LogIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: PresetColors.background,
       body: SafeArea(
 
